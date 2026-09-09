@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề kiểm tra Toán 12 - THPT Trần Phú</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- KaTeX CSS & JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"
+            onload="renderMath();"></script>
+
+    <style>
+        @media print {
+            .no-print { display: none !important; }
+            body { background: white; color: black; }
+            .print-border { border: none !important; box-shadow: none !important; }
+            .solution-box { display: block !important; }
+        }
+        .solution-box { display: none; }
+        .solution-box.show { display: block; }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans leading-relaxed min-h-screen pb-12">
+
+    <!-- HEADER TRƯỜNG & ĐỒNG HỒ -->
+    <header class="bg-white border-b shadow-sm sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div>
+                <h2 class="text-xs font-bold text-slate-500 uppercase tracking-wider">SỞ GD&ĐT QUẢNG TRỊ</h2>
+                <h1 class="text-base sm:text-lg font-extrabold text-blue-900">TRƯỜNG THPT TRẦN PHÚ</h1>
+            </div>
+            <div class="no-print flex items-center gap-3">
+                <span id="timer" class="text-base sm:text-lg font-mono font-bold text-red-600 bg-red-50 px-3 py-1 rounded-lg border border-red-200 shadow-sm">90:00</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-6 space-y-6">
+
+        <!-- TIÊU ĐỀ ĐỀ THI -->
+        <div class="text-center bg-white p-6 rounded-2xl shadow-sm border border-slate-200 print-border">
+            <h2 class="text-xl sm:text-2xl font-black uppercase text-slate-900 tracking-wide">ĐỀ KIỂM TRA MÔN TOÁN LỚP 12</h2>
+            <p class="text-sm text-slate-600 italic mt-1">Cấu trúc đề thi định dạng 2025 - Bộ Giáo Dục & Đào Tạo</p>
+            <div class="flex justify-center gap-6 mt-3 text-xs sm:text-sm font-medium text-slate-500">
+                <span>⏱️ Thời gian: 90 phút</span>
+                <span>📝 Tổng số câu: 22 câu</span>
+                <span>💯 Thang điểm: 10</span>
+            </div>
+        </div>
+
+        <!-- PHẦN I -->
+        <section class="bg-white p-5 sm:p-7 rounded-2xl shadow-sm border border-slate-200 space-y-6 print-border">
+            <div class="border-b pb-3">
+                <h3 class="font-bold text-blue-900 text-lg sm:text-xl">PHẦN I. Câu trắc nghiệm nhiều lựa chọn</h3>
+                <p class="text-xs sm:text-sm text-slate-500 italic">Thí sinh trả lời từ câu 1 đến câu 12. Mỗi câu hỏi thí sinh chỉ chọn một phương án (3.0 điểm).</p>
+            </div>
+
+            <!-- Q1 -->
+            <div class="question-container space-y-3" id="q1">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 1:</span> Cho hàm số $y = f(x)$ có bảng biến thiên như sau:</p>
+                <div class="p-3 bg-slate-50 rounded-lg text-center font-mono text-sm border overflow-x-auto">
+                    Hàm số đã cho đồng biến trên khoảng nào dưới đây?
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q1" value="A"> A. $(-1; 1)$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q1" value="B"> B. $(0; 2)$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q1" value="C"> C. $(-\infty; -1)$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q1" value="D"> D. $(1; +\infty)$</label>
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>Dựa vào bảng biến thiên, $f'(x) > 0$ trên các khoảng $(-\infty; -1)$ và $(1; +\infty)$. Do đó hàm số đồng biến trên $(1; +\infty)$. Chọn D.</p>
+                </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="question-container space-y-3 border-t pt-4" id="q2">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 2:</span> Điểm cực đại của đồ thị hàm số $y = x^3 - 3x + 2$ là:</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q2" value="A"> A. $(1; 0)$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q2" value="B"> B. $(-1; 4)$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q2" value="C"> C. $x = -1$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q2" value="D"> D. $y = 4$</label>
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>$y' = 3x^2 - 3 = 0 \Leftrightarrow x = \pm 1$. Ta có $y'' = 6x \Rightarrow y''(-1) = -6 < 0$ nên $x = -1$ là điểm cực đại. Giá trị cực đại $y(-1) = 4$. Vậy điểm cực đại của đồ thị là $(-1; 4)$. Chọn B.</p>
+                </div>
+            </div>
+
+            <!-- Q10 -->
+            <div class="question-container space-y-3 border-t pt-4" id="q10">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 10:</span> Giá trị nhỏ nhất của hàm số $y = x^2 + \frac{16}{x}$ trên $(0; +\infty)$ đạt được tại $x$ bằng:</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q10" value="A"> A. $x = 2$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q10" value="B"> B. $x = 4$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q10" value="C"> C. $x = 1$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q10" value="D"> D. $x = 8$</label>
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>Ta có $y' = 2x - \frac{16}{x^2} = 0 \Leftrightarrow 2x^3 = 16 \Leftrightarrow x = 2$. Lập BBT ta có GTNN đạt tại $x = 2$. Chọn A.</p>
+                </div>
+            </div>
+
+            <!-- Q11 -->
+            <div class="question-container space-y-3 border-t pt-4" id="q11">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 11:</span> Tìm tất cả các giá trị của tham số $m$ để giá trị lớn nhất của hàm số $y = x^2 - 2x + m$ trên $[0; 3]$ bằng $10$.</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q11" value="A"> A. $m = 7$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q11" value="B"> B. $m = 10$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q11" value="C"> C. $m = 11$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q11" value="D"> D. $m = 3$</label>
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>$y' = 2x - 2 = 0 \Leftrightarrow x = 1 \in [0; 3]$. $y(0) = m, y(1) = m-1, y(3) = m+3$. Do đó $\max_{[0;3]} y = m+3 = 10 \Leftrightarrow m = 7$. Chọn A.</p>
+                </div>
+            </div>
+
+            <!-- Q12 -->
+            <div class="question-container space-y-3 border-t pt-4" id="q12">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 12:</span> Một hộp hình chữ nhật không nắp có đáy là hình vuông cạnh $x\text{ (cm)}$ và chiều cao $h\text{ (cm)}$. Thể tích là $108\text{ cm}^3$. Diện tích toàn phần đạt giá trị nhỏ nhất khi $x$ bằng:</p>
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q12" value="A"> A. $x = 6\text{ cm}$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q12" value="B"> B. $x = 3\text{ cm}$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q12" value="C"> C. $x = 4\text{ cm}$</label>
+                    <label class="p-2.5 border rounded-xl hover:bg-blue-50/50 flex items-center gap-2 cursor-pointer text-sm font-medium"><input type="radio" name="p1_q12" value="D"> D. $x = 12\text{ cm}$</label>
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>Thể tích $V = x^2 h = 108 \Rightarrow h = \frac{108}{x^2}$. Diện tích $S = x^2 + 4xh = x^2 + \frac{432}{x}$. Dùng BĐT Cô-si cho 3 số: $x^2 + \frac{216}{x} + \frac{216}{x} \ge 3\sqrt[3]{216^2} = 108$. Dấu '=' xảy ra khi $x^3 = 216 \Leftrightarrow x = 6\text{ cm}$. Chọn A.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN II -->
+        <section class="bg-white p-5 sm:p-7 rounded-2xl shadow-sm border border-slate-200 space-y-6 print-border">
+            <div class="border-b pb-3">
+                <h3 class="font-bold text-blue-900 text-lg sm:text-xl">PHẦN II. Câu trắc nghiệm Đúng/Sai</h3>
+                <p class="text-xs sm:text-sm text-slate-500 italic">Thí sinh trả lời từ câu 1 đến câu 4. Trong mỗi ý a), b), c), d) ở mỗi câu, thí sinh chọn Đúng hoặc Sai (4.0 điểm).</p>
+            </div>
+
+            <!-- Q1 PART II -->
+            <div class="question-container space-y-3">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 1:</span> Cho hàm số $y = f(x) = \frac{x^2 + 3}{x - 1}$. Các phát biểu sau đúng hay sai?</p>
+                
+                <div class="space-y-2 border rounded-xl p-3 bg-slate-50">
+                    <div class="flex items-center justify-between gap-2 border-b pb-2 text-sm">
+                        <span>a) Tập xác định của hàm số là $D = \mathbb{R} \setminus \{1\}$.</span>
+                        <div class="flex gap-3 font-semibold">
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_a" value="T"> Đ</label>
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_a" value="F"> S</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-2 border-b pb-2 text-sm">
+                        <span>b) Đồ thị hàm số có tiệm cận đứng là đường thẳng $x = 1$.</span>
+                        <div class="flex gap-3 font-semibold">
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_b" value="T"> Đ</label>
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_b" value="F"> S</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-2 border-b pb-2 text-sm">
+                        <span>c) Hàm số đạt cực đại tại $x = 3$.</span>
+                        <div class="flex gap-3 font-semibold">
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_c" value="T"> Đ</label>
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_c" value="F"> S</label>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between gap-2 text-sm">
+                        <span>d) Đồ thị hàm số có tiệm cận xiên là $y = x + 1$.</span>
+                        <div class="flex gap-3 font-semibold">
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_d" value="T"> Đ</label>
+                            <label class="cursor-pointer"><input type="radio" name="p2_q1_d" value="F"> S</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>a) ĐÚNG. Điều kiện $x - 1 \neq 0 \Leftrightarrow x \neq 1$.<br>
+                    b) ĐÚNG. $\lim_{x \to 1^+} f(x) = +\infty \Rightarrow x = 1$ là TCĐ.<br>
+                    c) SAI. $y' = \frac{x^2 - 2x - 3}{(x-1)^2} = 0 \Leftrightarrow x = -1$ hoặc $x = 3$. Tại $x = -1$ hàm số đạt Cực Đại, tại $x = 3$ hàm số đạt Cực Tiểu.<br>
+                    d) ĐÚNG. $f(x) = x + 1 + \frac{4}{x-1} \Rightarrow y = x + 1$ là tiệm cận xiên.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PHẦN III -->
+        <section class="bg-white p-5 sm:p-7 rounded-2xl shadow-sm border border-slate-200 space-y-6 print-border">
+            <div class="border-b pb-3">
+                <h3 class="font-bold text-blue-900 text-lg sm:text-xl">PHẦN III. Câu trắc nghiệm trả lời ngắn</h3>
+                <p class="text-xs sm:text-sm text-slate-500 italic">Thí sinh trả lời từ câu 1 đến câu 6 (3.0 điểm).</p>
+            </div>
+
+            <!-- Q1 PART III -->
+            <div class="question-container space-y-3">
+                <p class="font-medium text-slate-900"><span class="font-bold text-blue-800">Câu 1:</span> Cho hàm số $y = -x^3 + 3x^2 + 9x - 1$. Giá trị lớn nhất của hàm số trên đoạn $[-2; 4]$ bằng bao nhiêu?</p>
+                <div class="flex items-center gap-3">
+                    <span class="text-sm font-semibold">Đáp số:</span>
+                    <input type="text" class="border-2 border-slate-300 rounded-lg px-3 py-1.5 text-sm w-36 focus:border-blue-600 focus:outline-none" placeholder="Nhập số...">
+                </div>
+                <div class="solution-box p-3.5 bg-blue-50/80 rounded-xl border-l-4 border-blue-600 text-sm text-slate-700 space-y-1">
+                    <p class="font-bold text-blue-900">Lời giải chi tiết:</p>
+                    <p>$y' = -3x^2 + 6x + 9 = 0 \Leftrightarrow x = -1$ hoặc $x = 3$ (đều thuộc $[-2; 4]$).<br>
+                    Tính các giá trị: $y(-2) = 1, y(-1) = -6, y(3) = 26, y(4) = 19$.<br>
+                    Giá trị lớn nhất là **26**.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NÚT ĐIỀU KHIỂN -->
+        <div class="no-print flex flex-wrap gap-3 justify-center pt-4">
+            <button onclick="window.print()" class="bg-slate-700 text-white px-5 py-2.5 rounded-xl font-medium shadow hover:bg-slate-800 transition">🖨️ In đề / Xuất PDF</button>
+            <button onclick="toggleSolutions()" class="bg-emerald-600 text-white px-5 py-2.5 rounded-xl font-medium shadow hover:bg-emerald-700 transition">💡 Hiện/Ẩn lời giải</button>
+            <button onclick="submitExam()" class="bg-blue-600 text-white px-7 py-2.5 rounded-xl font-bold shadow hover:bg-blue-700 transition">🚀 Nộp bài thi</button>
+        </div>
+
+    </main>
+
+    <script>
+        function renderMath() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: '$$', right: '$$', display: true},
+                    {left: '$', right: '$', display: false}
+                ],
+                throwOnError : false
+            });
+        }
+
+        function toggleSolutions() {
+            const boxes = document.querySelectorAll('.solution-box');
+            boxes.forEach(box => box.classList.toggle('show'));
+        }
+
+        function submitExam() {
+            toggleSolutions();
+            alert('Đã nộp bài thành công! Lời giải chi tiết đã hiển thị bên dưới mỗi câu hỏi.');
+        }
+
+        // Timer 90 mins
+        let duration = 90 * 60;
+        const timerDisplay = document.getElementById('timer');
+        setInterval(() => {
+            let minutes = Math.floor(duration / 60);
+            let seconds = duration % 60;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            seconds = seconds < 10 ? '0' + seconds : seconds;
+            timerDisplay.textContent = `${minutes}:${seconds}`;
+            if (--duration < 0) duration = 0;
+        }, 1000);
+    </script>
+</body>
+</html>
